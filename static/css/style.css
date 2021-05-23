@@ -1,5 +1,5 @@
 .jumbotron {
-  background-image: url('../static/images/human-microbiome.jpg');
+  background-image: url('human-microbiome.jpg');
   background-size: cover;
   height: 100%;}
 
