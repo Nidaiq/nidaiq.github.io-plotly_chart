@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bellybutton Biodiversity</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" media="screen" href="/static/css/style.css">
+</head>
+
+<body class= "container body">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center ">
+        <h1 style="color:white;">Belly Button Biodiversity Dashboard</h1>
+        <h4 style="color:white;">Use the interactive charts below to explore the dataset</h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="well">
+          <h2 >Test Subject ID No.:</h2>
+          <!-- <select id="selDataset"></select> -->
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title" >Demographic Info</h3>
+          </div>
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+      <div class= "container">
+        <div class="info_para">
+          <p>
+            <br>
+              Rosa is a microbiological researcher in a prominent microbiological laboratory. Many microbiological species are not studied enough, and some remain a mystery to us.  Rosa’s role is to discover and document some of these bacteria.  Rosa is particularly interested in bacterial protein that synthesize protein that taste like beef.  Her lab is coordinating with improbable beef, a new start up to study these organisms.  Lab across the country have had success synthesizing beef from algae, fungi and micro-organisms found on plant roots.  However, improbable beef is still in search of that bacteria that will provide the perfect taste.
+              <br>
+              <br>
+              Rosa has a hypothesis that these bacteria could be found on the human body.  Human body has a thousand of different bacteria that live on it in different parts. Furthermore, the bacterial species could differ between different individuals even in the same location of the body.  Rosa has hypothesized that the ideal bacteria that can synthesize the synthetic beef lives in the belly button.
+              <br>
+              <br>
+              To test the hypothesis, Rosa has tested navels of candidates across the country to identify the bacterial species that colonize the belly button. Each person’s identity is kept anonymous, and the person has been assigned an ID.
+              <br>
+              <br>
+              I have built a dashboard for Rosa that both her research participants and fellow researchers can access.  Individuals that have participated in the study can now find out what bacterial species live in their navel by selecting their ID number from the drop-down menu.
+              <br>
+              <br>
+              The top 10 bacterial cultures can be found in the bar graph below.  Bacteria culture per sample can be accessed in the bubble chart and the number of belly wash frequency can be shown in the gauge chart below for an individual once their ID is selected.
+              <br>
+              <br>
+              Possibilities of identifying this perfect testing synthetic beef may become a reality through someone’s belly button!
+          </p>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div id="bar"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div id="bubble"></div>
+        </div>
+      </div>
+      <div class="col-md-12" >
+        <div id="gauge"></div>
+      </div>
+    </div>
+    <!-- <div class="row">
+      <div class="col-md-12">
+        <div id="bubble"></div>
+      </div>
+    </div> -->
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="charts1.js"></script>
+
+</body>
+
+</html>
