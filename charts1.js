@@ -108,12 +108,13 @@ function buildCharts(sample) {
       title: "Top 10 Bacteria Cultures Found in Indivitual " + sample,
       xaxis: { title: "Sample Values" },
       yaxis: { title: "Otu Ids"},
-      // margin:{l:100, r:100, t:100, b:100},
+      //margin:{l:100, r:100, t:100, b:100},
       paper_bgcolor: "transparent",
       plot_bgcolor: "transparent",
       width: 600,
       height:400,
-      margin: {t:30, b:0},
+      margin: {t:30, b:30},
+      //margin: { t: 40, r: 40, l: 40, b: 40 },
     };
 
     // 10. Use Plotly to plot the data with the layout. 
@@ -137,13 +138,13 @@ var bubbleData = [trace2];
 var bubbleLayout = {
   title: 'Bacteria Culture Per Sample ',
   hovermode: 'closest',
-  xaxis: { title: "Otu Ids"},
+  xaxis: { title: "OTU ID"},
   showlegend: false,
   paper_bgcolor: "transparent",
   plot_bgcolor: "transparent",
   //margin:{l:100, r:100, t:100, b:100},
   height: 450,
-  width: 600,
+  width: 1000,
   };
 //};
 
@@ -189,7 +190,7 @@ var gaugeLayout = {
   height: 450,
   //line:{colour:'60000'},
   //margin:{l:100, r:100, t:100, b:100},
-  margin: { t: 25, r: 25, l: 25, b: 25 },
+  margin: { t: 50, r: 50, l: 50, b: 50 },
   paper_bgcolor: "linen",
   type: "indicator",
   mode: "number + gauge",
