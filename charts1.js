@@ -113,7 +113,7 @@ function buildCharts(sample) {
       plot_bgcolor: "transparent",
       width: 600,
       height:400,
-      margin: {t:25, b:25},
+      margin: {t:25, b:0},
       //margin: { t: 40, r: 40, l: 40, b: 40 },
     };
 
